@@ -68,6 +68,12 @@
     }
 
     .brand {
+      .brand-logo {
+  display: block;
+  width: 190px;
+  max-width: 100%;
+  height: auto;
+}
       display: flex;
       align-items: center;
       gap: 12px;
@@ -77,19 +83,7 @@
       letter-spacing: 2px;
     }
 
-    .brand-mark {
-      display: grid;
-      place-items: center;
-      width: 42px;
-      height: 42px;
-      border-radius: 12px;
-      background: var(--blue);
-      color: white;
-      font-size: 22px;
-      letter-spacing: 0;
-    }
-
-    .nav-link {
+      .nav-link {
       color: var(--navy);
       font-size: 14px;
       font-weight: 600;
@@ -435,10 +429,9 @@
 
   <div class="topbar">
     <div class="container nav">
-      <a class="brand" href="#domov" aria-label="Vrbex – domača stran">
-        <span class="brand-mark">V</span>
-        <span>VRBEX</span>
-      </a>
+     <a class="brand" href="#domov" aria-label="Vrbex – domača stran">
+  <img src="logo_Vrbex-mali.png" alt="Vrbex storitve" class="brand-logo">
+</a>
       <a class="nav-link" href="#kontakt">KONTAKT &nbsp; ↗</a>
     </div>
   </div>
